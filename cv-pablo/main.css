@@ -265,7 +265,6 @@ textarea::-webkit-scrollbar-thumb{
     background: var(--third-color);
 }
 
-
 #contact form button{
     margin-top: 1rem;
     width: 30%;
@@ -400,7 +399,7 @@ footer{
     }
 
     .svg-image img{
-        height: 60%;
+        height: 100%;
     }
     
     #about-me div img{
@@ -422,6 +421,10 @@ footer{
         height: 70%;
     }
 
+    input {
+        user-select: text;
+    }
+
     #contact form button{
         margin-top: 1rem;
         width: 40%;
@@ -432,11 +435,6 @@ footer{
 
     .download-cv{
         width: 100%;
-    }
-
-    footer{
-        position: relative;
-        bottom: 60px;
     }
 
 }
