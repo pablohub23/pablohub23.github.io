@@ -24,7 +24,8 @@ a,img,video,h1,h2,h3,h4,h5,h6,li{
 .container{
     width: 100vw;
     display: grid;
-    grid-template-rows: 100vh 60px auto 100px;
+    grid-template-rows: 60px auto 100px;
+    justify-items: center;
     background: var(--third-color);
 }
 
@@ -113,6 +114,7 @@ h2{
 }
 
 .main-container{
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -213,6 +215,7 @@ h2{
     align-items: flex-end;
     width: 100%;
     height: auto;
+    gap: 1rem;
     padding: 1rem;
     background: var(--primary-color);
 }
@@ -246,7 +249,7 @@ h2{
     width: 100%;
     height: 100px;
     border: none;
-    padding: 1rem;
+    padding: 5px 1rem;
     background: var(--white-color);
     outline: none;
     border-radius: 5px;
@@ -259,13 +262,52 @@ textarea::-webkit-scrollbar{
 }
 
 textarea::-webkit-scrollbar-thumb{
-    cursor: pointer;
     width: 8px;
     background: var(--third-color);
 }
 
+.flex-row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+#up-file{
+    position: relative;
+    left: 0;
+    width:30%;
+    display: flex;
+    align-items: center;
+    background: var(--white-color);
+    height: 50px;
+    border-radius: 5px;
+    transition: background 0.4s;
+}
+
+#up-file:hover{
+    color: var(--white-color);
+    background: var(--secondary-color);
+}
+
+#up-file p{
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+#upload-file{
+    cursor: pointer;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background: var(--primary-color);
+}
+
 #contact form button{
-    margin-top: 1rem;
     width: 30%;
     border: none;
     height: 50px;
@@ -332,8 +374,13 @@ textarea::-webkit-scrollbar-thumb{
 
 footer{
     margin-top: 1rem;
-    width: 100%;
+    width: 100vw;
     background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    padding: 1.4rem 0;
+    color: var(--white-color);
 }
 
 
@@ -346,7 +393,7 @@ footer{
     .container{
         width: 100vw;
         display: grid;
-        grid-template-rows: 50vh auto 200px;
+        grid-template-rows: auto 200px;
         background: var(--third-color);
     }
     :root{
@@ -356,7 +403,7 @@ footer{
         height: 100%;
     }
     header{
-
+        width: 100vw;
         position: fixed;
         background: transparent;
     }
@@ -366,7 +413,7 @@ footer{
     }
 
     .links-list-icons{
-        width: 100%;
+        width: 100vw;
         display: flex;
         justify-content: space-around;
         height: 60px;
@@ -375,8 +422,10 @@ footer{
         bottom: 0;
     }
 
+    .main-container{
+        width: 100%;
+    }
     .information-container{
-        padding: 1rem;
         height: auto;
         width: 100%;
         flex-direction: column;
@@ -416,17 +465,21 @@ footer{
     }
 
     #contact form{
-        width: 95%;
+        width: 100%;
         height: auto;
     }
 
     #contact form input, #contact form textarea{
-        padding: 3px;
+        padding-left: 10px;
+    }
+
+    #up-file{
+        width:40%;
+        height: 40px;
     }
 
     #contact form button{
-        margin-top: 1rem;
-        width: 50%;
+        width: 40%;
         border: none;
         height: 40px;
         font-size: 1rem;

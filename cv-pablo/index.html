@@ -13,9 +13,6 @@
 </head>
 <body>
     <div class="container">
-        <div class="hero-video">
-            <video autoplay loop src="assets/background.mp4"></video>
-        </div>
         <header>
             <div class="links-list">
                 <a href="#about-me">Acerca de Mi</a>
@@ -106,7 +103,13 @@
                         <label>Mensaje
                         <textarea name="message" placeholder="Escribe un mensaje"></textarea>
                         </label>
-                        <button id="submit" type="submit">Enviar</button>
+                        <div class="flex-row">
+                            <div id="up-file">
+                                <p>Adjuntar Archivo</p>
+                                <input id="upload-file" type="file" name="upload" accept=".pdf,.png,.doc">
+                            </div>
+                            <button id="submit" type="submit">Enviar</button>
+                        </div>
                     </form>
                 </div>
                 <div class="download-cv">
@@ -121,7 +124,7 @@
             </section>
         </main>
         <footer>
-            Pablo Argueta 
+            <h4>Derechos Reservados </h4> 
         </footer>
     </div>
 </body>
