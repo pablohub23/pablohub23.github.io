@@ -99,16 +99,17 @@
                 <div class="info">
                     <h2>Contacto</h2>
                     <p>Puedes contactarme a traves de mi correo electronico</p>
-                    <form  action="https://formspree.io/f/xrgjybbw" method="POST">
-                        <label for="email">Correo</label>
-                        <input type="email" required>
-                        <label for="message">Mensaje</label>
-                        <textarea name="message"></textarea>
+                    <form action="https://formspree.io/f/xrgjybbw" method="POST">
+                        <label>Correo
+                        <input type="email" name="email" placeholder="Ingresa tu correo electronico">
+                        </label>
+                        <label>Mensaje
+                        <textarea name="message" placeholder="Escribe un mensaje"></textarea>
+                        </label>
                         <button id="submit" type="submit">Enviar</button>
                     </form>
                 </div>
                 <div class="download-cv">
-                    
                     <img src="assets/pdf-image.png" alt="">
                     <a target="_blank" href="docs/CV Pablo Argueta.pdf" download="docs/CV Pablo Argueta.pdf">
                         <button class="btn-download">

@@ -204,7 +204,6 @@ h2{
     text-align: center;
 }
 
-
 #contact form{
     text-align: start;
     margin: 0 auto;
@@ -224,7 +223,7 @@ h2{
     margin-top: 1rem;
     margin-bottom: 5px;
     width: 100%;
-    padding-left: 10px;
+    height: auto;
     color: var(--white-color);
 }
 
@@ -347,7 +346,7 @@ footer{
     .container{
         width: 100vw;
         display: grid;
-        grid-template-rows: 50vh auto 100px;
+        grid-template-rows: 50vh auto 200px;
         background: var(--third-color);
     }
     :root{
@@ -357,8 +356,8 @@ footer{
         height: 100%;
     }
     header{
+        width: 100%;
         position: fixed;
-        height: 100%;
         background: transparent;
     }
 
@@ -394,7 +393,7 @@ footer{
         display: flex;
         justify-content: center;
         align-items: end;
-        width: 100%;
+        width: 80%;
         height: 30%;
     }
 
@@ -411,30 +410,36 @@ footer{
     .range-input{
         width: 100%;
     }
-    
-    /* .svg-image{
-        display: none;
-    } */
 
+    #contact{
+        height: auto;
+    }
     #contact form{
         width: 95%;
-        height: 70%;
+        height: auto;
     }
 
-    input {
-        user-select: text;
+    #contact form input, #contact form textarea{
+        padding: 1rem;
     }
 
     #contact form button{
         margin-top: 1rem;
-        width: 40%;
+        width: 50%;
         border: none;
-        height: 60px;
+        height: 40px;
         font-size: 1rem;
     }
 
     .download-cv{
-        width: 100%;
+        width: 90%;
+    }
+    .download-cv img{
+        width: auto;
+        height: 200px;
     }
 
+    footer{
+        margin-top: 1rem;
+    }
 }
