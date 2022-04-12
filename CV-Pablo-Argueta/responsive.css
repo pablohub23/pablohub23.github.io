@@ -58,25 +58,23 @@
 
     #about-me{
         width: 100%;
+        height: calc(100vh - 50px);
         display: flex;
         gap: 5vh;
-        height: calc(100vh - 50px);
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
     .info-container_text{
-        width: 90%;
+        width: 80%;
         text-align: center;
         height: auto;
     }
 
     #about-me img{
-        width: auto;
-        height: 100px;
-        border-radius: 50%;
-        background: var(--cv-fourth-color);
+        width: auto !important;
+        height: 180px !important;
     }
 
     #about-me img{
@@ -204,21 +202,6 @@
 
 
 @media screen and (orientation: landscape) {
-    
-    #about-me{
-        width: 100%;
-        display: flex;
-        gap: 5vh;
-        height: auto;
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #about-me img{
-        width: auto;
-        height: 200px;
-    }
 
     #contact{
         height: calc(100vh - 40px);
